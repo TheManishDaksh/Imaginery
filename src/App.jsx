@@ -1,9 +1,12 @@
 import './App.css'
+import { Navbar } from './components'
+import HomePage from './pages/HomePage'
 
 function App() {
   return(
-    <div className='text-6xl font-serif font-bold'>
-      Imaginery
+    <div>
+      <Navbar/>
+      <HomePage/>
     </div>
   )
 }
