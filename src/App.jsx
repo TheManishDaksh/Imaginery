@@ -1,12 +1,17 @@
 import './App.css'
-import { Navbar } from './components'
-import HomePage from './pages/HomePage'
+import {CreatePost, HomePage} from './pages'
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 
 function App() {
   return(
     <div>
-      <Navbar/>
-      <HomePage/>
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <HomePage/> } />
+          <Route path='/post' element={ <CreatePost/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
