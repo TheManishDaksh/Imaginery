@@ -1,8 +1,14 @@
 import React from 'react'
+import { Navbar } from '../components'
 
 function CreatePost() {
   return (
-    <div>CreatePosy</div>
+    <div> 
+      <Navbar/>
+      <div className='bg-black w-screen h-screen'>
+        Crate Page 
+      </div>
+    </div>
   )
 }
 
