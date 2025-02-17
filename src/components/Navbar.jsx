@@ -1,6 +1,8 @@
 import React from 'react';
 import {Button} from './';
-import {Link, useLocation, useNavigate} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom";
+import AddIcon from '@mui/icons-material/Add';
+import ExploreIcon from '@mui/icons-material/Explore';
 
 function Navbar() {
 
@@ -17,10 +19,13 @@ function Navbar() {
         <div> 
             { location.pathname === '/'? 
               <Button text={"Create Post"} 
-              onClick={()=>navigate('/post')} /> :
+              onClick={()=>navigate('/post')} 
+              icon={<AddIcon fontSize='small'/>}
+              /> :
               <Button text={"Explore Posts"} 
               onClick={()=>navigate('/')} 
               className={`bg-violet-500 hover:bg-violet-600`}
+              icon={<ExploreIcon fontSize='small'/>}
               />  
           }
         </div>

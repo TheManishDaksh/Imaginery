@@ -1,12 +1,13 @@
 import React from 'react'
-import { Navbar } from '../components'
+import { Input, Navbar } from '../components'
 
 function CreatePost() {
   return (
     <div> 
       <Navbar/>
-      <div className='bg-black w-screen h-screen'>
-        Crate Page 
+      <div className='bg-black text-white w-screen h-screen'>
+        Crate Page
+        <Input/> 
       </div>
     </div>
   )
