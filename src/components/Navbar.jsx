@@ -24,7 +24,7 @@ function Navbar() {
               /> :
               <Button text={"Explore Posts"} 
               onClick={()=>navigate('/')} 
-              className={`bg-violet-500 hover:bg-violet-600`}
+              className={`bg-violet-700 hover:bg-violet-800`}
               icon={<ExploreIcon fontSize='small'/>}
               />  
           }
