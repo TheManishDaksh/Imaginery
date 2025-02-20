@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Input} from '../components'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
+import { GenerateImage } from '../api';
 
 function GenerateImageForm({
     post,
@@ -11,6 +12,8 @@ function GenerateImageForm({
     createPostLoading,
     setCreatePostLoading
 }) {
+
+  
   return (
     <div> 
         <div className='bg-black text-white p-3'>
@@ -39,6 +42,7 @@ function GenerateImageForm({
             text={'Generate Image'}
             icon={<AutoAwesomeIcon/>}
             className="md:w-48 flex justify-center"
+            onClick={Generate}
           />
           <Button 
             text={'Post Image'}

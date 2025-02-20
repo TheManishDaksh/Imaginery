@@ -8,7 +8,7 @@ function GeneratedImageCard({src, laoding}) {
         <div className='text-white p-8 font-bold text-lg'>
             Generated Image Card
         </div>
-        <div className='border-2 border-slate-600 text-slate-400 w-full md:w-96 h-full lg:h-64 rounded-lg p-2'>
+        <div className='border-2 flex justify-center items-center border-slate-600 text-slate-400 w-full md:w-96 h-full lg:h-64 rounded-lg p-2'>
             { laoding ? 
                 (<div>
                     <CircularProgress/>
